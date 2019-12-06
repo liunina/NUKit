@@ -15,16 +15,21 @@ TODO: Add long description of the pod here.
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '9.3'
+  s.platform = 'ios'
   
-  s.public_header_files = 'NUKit/Classes/*.h'
-  s.source_files = 'NUKit/Classes/*.{h,m}'
-  s.frameworks = 'UIKit','AssetsLibrary','Photos','AVFoundation'
-
-  s.dependency 'HBDNavigationBar'
-  # s.resource_bundles = {
-  #   'NUKit' => ['NUKit/Assets/*.png']
-  # }
+  s.subspec 'Core' do |core|
+	  core.frameworks = 'UIKit','AssetsLibrary','Photos','AVFoundation'
+	  core.dependency 'Masonry'
+	  core.dependency 'HBDNavigationBar'
+	  core.dependency 'BlocksKit'
+	  core.public_header_files = 'NUKit/Classes/Core/*.h'
+	  core.source_files = 'NUKit/Classes/Core/**/*'
+	  # s.resource_bundles = {
+	   #   'NUKit' => ['NUKit/Assets/*.png']
+	   # }
+  end
   s.subspec 'Category' do |cg|
+	  cg.dependency 'NUKit/Core'
 	  cg.dependency 'Masonry'
 	  cg.dependency 'BlocksKit'
 	  cg.dependency 'AFNetworking/Reachability'

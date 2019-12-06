@@ -18,14 +18,18 @@ PODS:
   - HBDNavigationBar (1.5.2)
   - Masonry (1.1.0)
   - NUKit (0.1.0):
-    - HBDNavigationBar
     - NUKit/Category (= 0.1.0)
+    - NUKit/Core (= 0.1.0)
   - NUKit/Category (0.1.0):
     - AFNetworking/Reachability
     - BlocksKit
+    - Masonry
+    - NUKit/Core
+    - TZImagePickerController
+  - NUKit/Core (0.1.0):
+    - BlocksKit
     - HBDNavigationBar
     - Masonry
-    - TZImagePickerController
   - TZImagePickerController (3.2.7)
 
 DEPENDENCIES:
@@ -48,7 +52,7 @@ SPEC CHECKSUMS:
   BlocksKit: 7f422b971407001178d181a43b99014ea2591fe6
   HBDNavigationBar: 1c470db0183d1aa8cbb4912196cfb10752eebcc8
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
-  NUKit: aa6c207e2f848beb353898116cda969e51b042c8
+  NUKit: affa938d75c0125bcf3d0c3ff599536765e3950a
   TZImagePickerController: 821b81f83594a736e831a018f2a2ce31822ddf0b
 
 PODFILE CHECKSUM: 27abeb40861deb3283b552172ae70cbc566513a9
