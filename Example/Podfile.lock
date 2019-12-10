@@ -1,5 +1,4 @@
 PODS:
-  - AFNetworking/Reachability (3.2.1)
   - BlocksKit (2.2.5):
     - BlocksKit/All (= 2.2.5)
   - BlocksKit/All (2.2.5):
@@ -17,21 +16,22 @@ PODS:
     - BlocksKit/DynamicDelegate
   - HBDNavigationBar (1.5.2)
   - Masonry (1.1.0)
-  - NUKit (0.1.0):
-    - NUKit/Category (= 0.1.0)
-    - NUKit/Core (= 0.1.0)
-    - NUKit/ViewModel (= 0.1.0)
-  - NUKit/Category (0.1.0):
-    - AFNetworking/Reachability
+  - NUKit (0.1.1):
+    - NUKit/Category (= 0.1.1)
+    - NUKit/Core (= 0.1.1)
+    - NUKit/ViewModel (= 0.1.1)
+  - NUKit/Category (0.1.1):
     - BlocksKit
     - Masonry
     - NUKit/Core
+    - Reachability
     - TZImagePickerController
-  - NUKit/Core (0.1.0):
+  - NUKit/Core (0.1.1):
     - BlocksKit
     - HBDNavigationBar
     - Masonry
-  - NUKit/ViewModel (0.1.0)
+  - NUKit/ViewModel (0.1.1)
+  - Reachability (3.2)
   - TZImagePickerController (3.2.7)
 
 DEPENDENCIES:
@@ -39,10 +39,10 @@ DEPENDENCIES:
 
 SPEC REPOS:
   trunk:
-    - AFNetworking
     - BlocksKit
     - HBDNavigationBar
     - Masonry
+    - Reachability
     - TZImagePickerController
 
 EXTERNAL SOURCES:
@@ -50,11 +50,11 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
   BlocksKit: 7f422b971407001178d181a43b99014ea2591fe6
   HBDNavigationBar: 1c470db0183d1aa8cbb4912196cfb10752eebcc8
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
-  NUKit: d9a3e2033390b88f43b4b6155ea06ff49ebd1a51
+  NUKit: ad63607fbc6b069063440c72693985ed2b8bf364
+  Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
   TZImagePickerController: 821b81f83594a736e831a018f2a2ce31822ddf0b
 
 PODFILE CHECKSUM: 27abeb40861deb3283b552172ae70cbc566513a9

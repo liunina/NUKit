@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'NUKit'
-  s.version          = '0.1.1'
+  s.version          = '0.1.2'
   s.summary          = 'A short description of NUKit.'
 
   s.description      = <<-DESC
@@ -27,10 +27,11 @@ TODO: Add long description of the pod here.
 	   # }
   end
   s.subspec 'Category' do |cg|
+	  cg.frameworks = 'SystemConfiguration'
 	  cg.dependency 'NUKit/Core'
 	  cg.dependency 'Masonry'
 	  cg.dependency 'BlocksKit'
-	  cg.dependency 'AFNetworking/Reachability'
+	  cg.dependency 'Reachability'
 	  cg.dependency 'TZImagePickerController'
 	  cg.source_files = 'NUKit/Classes/Category/**/*'
   end

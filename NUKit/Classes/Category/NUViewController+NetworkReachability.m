@@ -6,7 +6,7 @@
 //
 
 #import "NUViewController+NetworkReachability.h"
-#import <AFNetworking/AFNetworkReachabilityManager.h>
+#import <Reachability/Reachability.h>
 #import <objc/runtime.h>
 
 static void *kNUReachabilityStatusChangeBlockKey = @"kNUReachabilityStatusChangeBlockKey";
@@ -16,13 +16,28 @@ static void *kNUNetworkStatusKey = @"kNUNetworkStatusKey";
 @implementation NUViewController (NetworkReachability)
 
 - (void)setNetWorkReachabilityStatusChangeBlock:(NUReachabilityStatusChangeBlock)block {
+	self.lastNetworkStatus = NUNetworkReachabilityStatusUnknown;
+	self.networkStatus = NUNetworkReachabilityStatusUnknown;
 	self.reachabilityStatusChangeBlock = block;
 	__weak typeof(self) ws = self;
-    [[AFNetworkReachabilityManager sharedManager] setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status) {
-        ws.lastNetworkStatus = (NUNetworkReachabilityStatus)ws.networkStatus;
-        ws.networkStatus = (NUNetworkReachabilityStatus)status;
-		ws.reachabilityStatusChangeBlock(ws.lastNetworkStatus, ws.networkStatus);
-    }];
+	
+	Reachability *reach = [Reachability reachabilityWithHostname:@"www.baidu.com"];
+	reach.reachableBlock = ^(Reachability*reach) {
+		dispatch_async(dispatch_get_main_queue(), ^{
+			ws.lastNetworkStatus = (NUNetworkReachabilityStatus)ws.networkStatus;
+			ws.networkStatus = (NUNetworkReachabilityStatus)reach.currentReachabilityStatus;
+			ws.reachabilityStatusChangeBlock(ws.lastNetworkStatus, ws.networkStatus);
+		});
+	};
+
+	reach.unreachableBlock = ^(Reachability*reach) {
+		dispatch_async(dispatch_get_main_queue(), ^{
+			ws.lastNetworkStatus = (NUNetworkReachabilityStatus)ws.networkStatus;
+			ws.networkStatus = (NUNetworkReachabilityStatus)reach.currentReachabilityStatus;
+			ws.reachabilityStatusChangeBlock(ws.lastNetworkStatus, ws.networkStatus);
+		});
+	};
+	[reach startNotifier];
 }
 
 #pragma mark - getter
