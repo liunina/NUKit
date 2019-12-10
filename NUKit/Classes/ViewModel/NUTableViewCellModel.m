@@ -9,4 +9,13 @@
 
 @implementation NUTableViewCellModel
 
+- (instancetype)init {
+    if (self = [super init]) {
+        self.cellHeight = UITableViewAutomaticDimension;
+        [self setSelectCellBlock:^(NSIndexPath *indexPath, UITableView *tableView) {
+        }];
+    }
+    return self;
+}
+
 @end

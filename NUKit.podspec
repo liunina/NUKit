@@ -8,12 +8,10 @@ TODO: Add long description of the pod here.
                        DESC
 
   s.homepage         = 'https://gitea.iliunian.com/apple/NUKit'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'i19850511@gmail.com' => 'i19850511@gmail.com' }
-  s.source           = { :git => 'https://gitea.iliunian.com/apple/NUKit.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-
+  s.source           = { :git => 'http://nas.iliunian.com:82/apple/NUKit.git', :tag => s.version.to_s }
+  
   s.ios.deployment_target = '9.3'
   s.platform = 'ios'
   
@@ -35,5 +33,8 @@ TODO: Add long description of the pod here.
 	  cg.dependency 'AFNetworking/Reachability'
 	  cg.dependency 'TZImagePickerController'
 	  cg.source_files = 'NUKit/Classes/Category/**/*'
+  end
+  s.subspec 'ViewModel' do |vm|
+	  vm.source_files = 'NUKit/Classes/ViewModel/**/*'
   end
 end

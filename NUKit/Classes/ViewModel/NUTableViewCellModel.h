@@ -10,7 +10,12 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface NUTableViewCellModel : NSObject
-
+@property (nonatomic, assign) CGFloat cellHeight;
+@property (nonatomic, copy) UITableViewCell *(^configCellBlock)(NSIndexPath *indexPath, UITableView *tableView);
+@property (nonatomic, copy) void (^selectCellBlock)(NSIndexPath *indexPath, UITableView *tableView);
+/*
+ 其他属性按需求添加
+ */
 @end
 
 NS_ASSUME_NONNULL_END
