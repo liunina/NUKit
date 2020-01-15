@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'NUKit'
-  s.version          = '0.1.2'
+  s.version          = '0.1.3'
   s.summary          = 'A short description of NUKit.'
 
   s.description      = <<-DESC
@@ -16,7 +16,7 @@ TODO: Add long description of the pod here.
   s.platform = 'ios'
   
   s.subspec 'Core' do |core|
-	  core.frameworks = 'UIKit','AssetsLibrary','Photos','AVFoundation'
+	  core.frameworks = 'UIKit'
 	  core.dependency 'Masonry'
 	  core.dependency 'HBDNavigationBar'
 	  core.dependency 'BlocksKit'
@@ -26,16 +26,20 @@ TODO: Add long description of the pod here.
 	   #   'NUKit' => ['NUKit/Assets/*.png']
 	   # }
   end
-  s.subspec 'Category' do |cg|
-	  cg.frameworks = 'SystemConfiguration'
-	  cg.dependency 'NUKit/Core'
-	  cg.dependency 'Masonry'
-	  cg.dependency 'BlocksKit'
-	  cg.dependency 'Reachability'
-	  cg.dependency 'TZImagePickerController'
-	  cg.source_files = 'NUKit/Classes/Category/**/*'
-  end
+ 
   s.subspec 'ViewModel' do |vm|
 	  vm.source_files = 'NUKit/Classes/ViewModel/**/*'
   end
+  s.subspec 'Category' do |cg|
+	   cg.dependency 'NUKit/Core'
+	   cg.source_files = 'NUKit/Classes/Category/**/*'
+   end
+   s.subspec 'VCCategory' do |cg|
+		cg.frameworks = 'SystemConfiguration','AssetsLibrary','Photos','AVFoundation'
+		cg.dependency 'NUKit/Core'
+		cg.dependency 'NUKit/Category'
+		cg.dependency 'Reachability'
+		cg.dependency 'TZImagePickerController'
+		cg.source_files = 'NUKit/Classes/VCCategory/**/*'
+	end
 end
