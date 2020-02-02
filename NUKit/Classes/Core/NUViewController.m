@@ -8,7 +8,7 @@
 #import "NUViewController.h"
 #import <HBDNavigationBar/HBDNavigationController.h>
 #import <HBDNavigationBar/UIViewController+HBD.h>
-#import <BlocksKit/BlocksKit+UIKit.h>
+#import <NUBlocksKit/BlocksKit+UIKit.h>
 
 @interface NUViewController ()
 @property (nonatomic, strong, readwrite) NUInterfaceEnv *uiEnv;
