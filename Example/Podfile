@@ -1,5 +1,6 @@
 use_frameworks!
-
+source 'git@git.iliunian.cn:apple/NLSpecs.git'
+source 'https://cdn.cocoapods.org/'
 platform :ios, '9.3'
 
 target 'NUKit_Example' do

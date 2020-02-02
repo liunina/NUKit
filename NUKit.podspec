@@ -1,13 +1,13 @@
 Pod::Spec.new do |s|
   s.name             = 'NUKit'
-  s.version          = '0.1.3'
+  s.version          = '0.1.4'
   s.summary          = 'A short description of NUKit.'
 
   s.description      = <<-DESC
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://gitea.iliunian.com/apple/NUKit'
+  s.homepage         = 'http://nas.iliunian.com:82/apple/NUKit'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'i19850511@gmail.com' => 'i19850511@gmail.com' }
   s.source           = { :git => 'http://nas.iliunian.com:82/apple/NUKit.git', :tag => s.version.to_s }
@@ -19,7 +19,7 @@ TODO: Add long description of the pod here.
 	  core.frameworks = 'UIKit'
 	  core.dependency 'Masonry'
 	  core.dependency 'HBDNavigationBar'
-	  core.dependency 'BlocksKit'
+	  core.dependency 'NUBlocksKit'
 	  core.public_header_files = 'NUKit/Classes/Core/*.h'
 	  core.source_files = 'NUKit/Classes/Core/**/*'
 	  # s.resource_bundles = {

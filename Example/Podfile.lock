@@ -1,47 +1,52 @@
 PODS:
-  - BlocksKit (2.2.5):
-    - BlocksKit/All (= 2.2.5)
-  - BlocksKit/All (2.2.5):
-    - BlocksKit/Core
-    - BlocksKit/DynamicDelegate
-    - BlocksKit/MessageUI
-    - BlocksKit/UIKit
-  - BlocksKit/Core (2.2.5)
-  - BlocksKit/DynamicDelegate (2.2.5)
-  - BlocksKit/MessageUI (2.2.5):
-    - BlocksKit/Core
-    - BlocksKit/DynamicDelegate
-  - BlocksKit/UIKit (2.2.5):
-    - BlocksKit/Core
-    - BlocksKit/DynamicDelegate
-  - HBDNavigationBar (1.5.2)
+  - HBDNavigationBar (1.7.2)
   - Masonry (1.1.0)
-  - NUKit (0.1.3):
-    - NUKit/Category (= 0.1.3)
-    - NUKit/Core (= 0.1.3)
-    - NUKit/VCCategory (= 0.1.3)
-    - NUKit/ViewModel (= 0.1.3)
-  - NUKit/Category (0.1.3):
+  - NUBlocksKit (1.0):
+    - NUBlocksKit/All (= 1.0)
+  - NUBlocksKit/All (1.0):
+    - NUBlocksKit/Core
+    - NUBlocksKit/DynamicDelegate
+    - NUBlocksKit/MessageUI
+    - NUBlocksKit/QuickLook
+    - NUBlocksKit/UIKit
+  - NUBlocksKit/Core (1.0)
+  - NUBlocksKit/DynamicDelegate (1.0)
+  - NUBlocksKit/MessageUI (1.0):
+    - NUBlocksKit/Core
+    - NUBlocksKit/DynamicDelegate
+  - NUBlocksKit/QuickLook (1.0):
+    - NUBlocksKit/Core
+    - NUBlocksKit/DynamicDelegate
+  - NUBlocksKit/UIKit (1.0):
+    - NUBlocksKit/Core
+    - NUBlocksKit/DynamicDelegate
+  - NUKit (0.1.4):
+    - NUKit/Category (= 0.1.4)
+    - NUKit/Core (= 0.1.4)
+    - NUKit/VCCategory (= 0.1.4)
+    - NUKit/ViewModel (= 0.1.4)
+  - NUKit/Category (0.1.4):
     - NUKit/Core
-  - NUKit/Core (0.1.3):
-    - BlocksKit
+  - NUKit/Core (0.1.4):
     - HBDNavigationBar
     - Masonry
-  - NUKit/VCCategory (0.1.3):
+    - NUBlocksKit
+  - NUKit/VCCategory (0.1.4):
     - NUKit/Category
     - NUKit/Core
     - Reachability
     - TZImagePickerController
-  - NUKit/ViewModel (0.1.3)
+  - NUKit/ViewModel (0.1.4)
   - Reachability (3.2)
-  - TZImagePickerController (3.2.7)
+  - TZImagePickerController (3.3.0)
 
 DEPENDENCIES:
   - NUKit (from `../`)
 
 SPEC REPOS:
+  "git@git.iliunian.cn:apple/NLSpecs.git":
+    - NUBlocksKit
   trunk:
-    - BlocksKit
     - HBDNavigationBar
     - Masonry
     - Reachability
@@ -52,13 +57,13 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  BlocksKit: 7f422b971407001178d181a43b99014ea2591fe6
-  HBDNavigationBar: 1c470db0183d1aa8cbb4912196cfb10752eebcc8
+  HBDNavigationBar: b64331d6b3042c56e2c0b7fea1fd8e620a1b2872
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
-  NUKit: dfaeacfc12cd9726952e666bbaf530733961a71b
+  NUBlocksKit: 416de7ed10f2a177fcad0cd14c69c77a442a44a2
+  NUKit: 0f3fa7b99d0b13ce686ed7c79ca03278bfc97ef0
   Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
-  TZImagePickerController: 821b81f83594a736e831a018f2a2ce31822ddf0b
+  TZImagePickerController: 57e97774b6d3970abf38619645c7cc1caf257c41
 
-PODFILE CHECKSUM: 27abeb40861deb3283b552172ae70cbc566513a9
+PODFILE CHECKSUM: 21963723ac9c41b944ebf9340726ef8b833f1dc9
 
 COCOAPODS: 1.8.4
