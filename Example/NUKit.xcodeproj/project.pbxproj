@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F8F3362240D4D0400CDFA93 /* NLTitleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F8F3361240D4D0400CDFA93 /* NLTitleTableViewCell.m */; };
 		340CEF41A2A535588E09E24F /* Pods_NUKit_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 445CEF639DC3EA647C664F3F /* Pods_NUKit_Example.framework */; };
 		57F1D37AB8DE144EE022B5EB /* Pods_NUKit_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE00677F34DAA112AF5A5C95 /* Pods_NUKit_Tests.framework */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
@@ -38,6 +39,8 @@
 
 /* Begin PBXFileReference section */
 		101A78A3879AA2E192198BAA /* NUKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = NUKit.podspec; path = ../NUKit.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		1F8F3360240D4D0400CDFA93 /* NLTitleTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NLTitleTableViewCell.h; sourceTree = "<group>"; };
+		1F8F3361240D4D0400CDFA93 /* NLTitleTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NLTitleTableViewCell.m; sourceTree = "<group>"; };
 		2261993F98FCEDBE82699A24 /* Pods-NUKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NUKit_Tests.debug.xcconfig"; path = "Target Support Files/Pods-NUKit_Tests/Pods-NUKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		4423B3DBA32C34A835CD62D8 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		445CEF639DC3EA647C664F3F /* Pods_NUKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NUKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -95,6 +98,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F8F335E240D4CD700CDFA93 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1F8F3360240D4D0400CDFA93 /* NLTitleTableViewCell.h */,
+				1F8F3361240D4D0400CDFA93 /* NLTitleTableViewCell.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1F8F335F240D4CD700CDFA93 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
@@ -132,6 +151,8 @@
 		6003F593195388D20070C39A /* Example for NUKit */ = {
 			isa = PBXGroup;
 			children = (
+				1F8F335F240D4CD700CDFA93 /* ViewControllers */,
+				1F8F335E240D4CD700CDFA93 /* Views */,
 				6003F59C195388D20070C39A /* NLAppDelegate.h */,
 				6003F59D195388D20070C39A /* NLAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
@@ -374,6 +395,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F8F3362240D4D0400CDFA93 /* NLTitleTableViewCell.m in Sources */,
 				6003F59E195388D20070C39A /* NLAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* NLViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,

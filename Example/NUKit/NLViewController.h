@@ -7,7 +7,9 @@
 //
 
 @import UIKit;
+@interface NLViewControllerDataSource : NSObject
 
+@end
 @interface NLViewController : UIViewController
 
 @end
