@@ -20,23 +20,23 @@ PODS:
   - NUBlocksKit/UIKit (1.0):
     - NUBlocksKit/Core
     - NUBlocksKit/DynamicDelegate
-  - NUKit (0.1.6):
-    - NUKit/Category (= 0.1.6)
-    - NUKit/Core (= 0.1.6)
-    - NUKit/VCCategory (= 0.1.6)
-    - NUKit/ViewModel (= 0.1.6)
-  - NUKit/Category (0.1.6):
+  - NUKit (0.1.7):
+    - NUKit/Category (= 0.1.7)
+    - NUKit/Core (= 0.1.7)
+    - NUKit/VCCategory (= 0.1.7)
+    - NUKit/ViewModel (= 0.1.7)
+  - NUKit/Category (0.1.7):
     - NUKit/Core
-  - NUKit/Core (0.1.6):
+  - NUKit/Core (0.1.7):
     - HBDNavigationBar
     - Masonry
     - NUBlocksKit
-  - NUKit/VCCategory (0.1.6):
+  - NUKit/VCCategory (0.1.7):
     - NUKit/Category
     - NUKit/Core
     - Reachability
     - TZImagePickerController
-  - NUKit/ViewModel (0.1.6)
+  - NUKit/ViewModel (0.1.7)
   - Reachability (3.2)
   - TZImagePickerController (3.3.0)
 
@@ -60,7 +60,7 @@ SPEC CHECKSUMS:
   HBDNavigationBar: b64331d6b3042c56e2c0b7fea1fd8e620a1b2872
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   NUBlocksKit: 416de7ed10f2a177fcad0cd14c69c77a442a44a2
-  NUKit: 76a92d70f38a262e59d1b90cd3c745de7b69ab0d
+  NUKit: 9826ed73b5617a855e1ce9933e66a7be221f542b
   Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
   TZImagePickerController: 57e97774b6d3970abf38619645c7cc1caf257c41
 

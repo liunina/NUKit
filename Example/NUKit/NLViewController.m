@@ -39,10 +39,10 @@
 	}
 	__weak typeof(self) ws = self;
 	NUTableViewModel *sectionModel = [[NUTableViewModel alloc] init];
-	[sectionModel setHeaderViewBlock:^UIView *(NSInteger section, UITableView *tableView) {
-		UILabel *label = [[UILabel alloc] initWithFrame:CGRectZero];
-		label.text = [NSString stringWithFormat:@"section - %d",section];
-		return label;
+	[sectionModel setHeaderViewBlock:^UITableViewHeaderFooterView *(NSInteger section, UITableView *tableView) {
+		UITableViewHeaderFooterView *view = [[UITableViewHeaderFooterView alloc] initWithFrame:CGRectZero];
+		view.textLabel.text = [NSString stringWithFormat:@"section - %d",section];
+		return view;
 	}];
 	sectionModel.headerHeight = 20.0;
 

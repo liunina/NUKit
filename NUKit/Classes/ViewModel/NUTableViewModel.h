@@ -16,10 +16,10 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign) CGFloat footerHeight;
 @property (nonatomic, strong) NSString *headerTitle;
 @property (nonatomic, strong) NSString *footerTitle;
-@property (nonatomic, strong) UIView *headerView;
-@property (nonatomic, strong) UIView *footerView;
-@property (nonatomic, copy) UIView * (^headerViewBlock)(NSInteger section, UITableView *tableView);
-@property (nonatomic, copy) UIView * (^footerViewBlock)(NSInteger section, UITableView *tableView);
+@property (nonatomic, strong) UITableViewHeaderFooterView *headerView;
+@property (nonatomic, strong) UITableViewHeaderFooterView *footerView;
+@property (nonatomic, copy) UITableViewHeaderFooterView * (^headerViewBlock)(NSInteger section, UITableView *tableView);
+@property (nonatomic, copy) UITableViewHeaderFooterView * (^footerViewBlock)(NSInteger section, UITableView *tableView);
 
 @end
 
