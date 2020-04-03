@@ -20,23 +20,23 @@ PODS:
   - NUBlocksKit/UIKit (1.0):
     - NUBlocksKit/Core
     - NUBlocksKit/DynamicDelegate
-  - NUKit (0.1.7):
-    - NUKit/Category (= 0.1.7)
-    - NUKit/Core (= 0.1.7)
-    - NUKit/VCCategory (= 0.1.7)
-    - NUKit/ViewModel (= 0.1.7)
-  - NUKit/Category (0.1.7):
+  - NUKit (0.1.8):
+    - NUKit/Category (= 0.1.8)
+    - NUKit/Core (= 0.1.8)
+    - NUKit/VCCategory (= 0.1.8)
+    - NUKit/ViewModel (= 0.1.8)
+  - NUKit/Category (0.1.8):
     - NUKit/Core
-  - NUKit/Core (0.1.7):
+  - NUKit/Core (0.1.8):
     - HBDNavigationBar
     - Masonry
     - NUBlocksKit
-  - NUKit/VCCategory (0.1.7):
+  - NUKit/VCCategory (0.1.8):
     - NUKit/Category
     - NUKit/Core
     - Reachability
     - TZImagePickerController
-  - NUKit/ViewModel (0.1.7)
+  - NUKit/ViewModel (0.1.8)
   - Reachability (3.2)
   - TZImagePickerController (3.3.0)
 
@@ -44,13 +44,13 @@ DEPENDENCIES:
   - NUKit (from `../`)
 
 SPEC REPOS:
-  "git@git.iliunian.cn:apple/NLSpecs.git":
-    - NUBlocksKit
-  trunk:
+  https://github.com/CocoaPods/Specs.git:
     - HBDNavigationBar
     - Masonry
     - Reachability
     - TZImagePickerController
+  https://github.com/liunina/NLSpecs.git:
+    - NUBlocksKit
 
 EXTERNAL SOURCES:
   NUKit:
@@ -60,10 +60,10 @@ SPEC CHECKSUMS:
   HBDNavigationBar: b64331d6b3042c56e2c0b7fea1fd8e620a1b2872
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   NUBlocksKit: 416de7ed10f2a177fcad0cd14c69c77a442a44a2
-  NUKit: 9826ed73b5617a855e1ce9933e66a7be221f542b
+  NUKit: 8557cbb4ae1c0f11087b34696e7b99a4afeb74d8
   Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
   TZImagePickerController: 57e97774b6d3970abf38619645c7cc1caf257c41
 
-PODFILE CHECKSUM: 21963723ac9c41b944ebf9340726ef8b833f1dc9
+PODFILE CHECKSUM: 658dade78526d7fbf2dc8add4fb073fedee142cd
 
-COCOAPODS: 1.8.4
+COCOAPODS: 1.9.1
