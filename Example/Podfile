@@ -6,7 +6,6 @@ platform :ios, '10.0'
 
 target 'NUKit_Example' do
   pod 'NUKit', :path => '../'
-  pod 'NUBlocksKit', '~> 2.0.0'
 
   target 'NUKit_Tests' do
     inherit! :search_paths

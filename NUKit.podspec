@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'NUKit'
-  s.version          = '0.2.1'
+  s.version          = '0.2.2'
   s.summary          = 'A short description of NUKit.'
 
   s.description      = <<-DESC
@@ -13,19 +13,16 @@ AA
   s.author           = { 'i19850511@gmail.com' => 'i19850511@gmail.com' }
   s.source           = { :git => 'https://github.com/liunina/NUKit.git', :tag => s.version.to_s }
   
-  s.ios.deployment_target = '9.3'
+  s.ios.deployment_target = '10.0'
   s.platform = 'ios'
   
   s.subspec 'Core' do |core|
 	  core.frameworks = 'UIKit'
 	  core.dependency 'Masonry'
 	  core.dependency 'HBDNavigationBar'
-	  core.dependency 'NUBlocksKit'
+	  core.dependency 'NUBlocksKit', '~> 2.0.0'
 	  core.public_header_files = 'NUKit/Classes/Core/*.h'
 	  core.source_files = 'NUKit/Classes/Core/**/*'
-	  # s.resource_bundles = {
-	   #   'NUKit' => ['NUKit/Assets/*.png']
-	   # }
   end
  
   s.subspec 'ViewModel' do |vm|
