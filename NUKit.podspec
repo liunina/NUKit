@@ -5,6 +5,7 @@ Pod::Spec.new do |s|
 
   s.description      = <<-DESC
 TODO: Add long description of the pod here.
+AA
                        DESC
 
   s.homepage         = 'https://github.com/liunina/NUKit'
