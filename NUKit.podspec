@@ -12,10 +12,8 @@ AA
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'i19850511@gmail.com' => 'i19850511@gmail.com' }
   s.source           = { :git => 'https://github.com/liunina/NUKit.git', :tag => s.version.to_s }
-  
-  s.ios.deployment_target = '10.0'
   s.platform = 'ios'
-  
+  s.ios.deployment_target = '10.0'
   s.subspec 'Core' do |core|
 	  core.frameworks = 'UIKit'
 	  core.dependency 'Masonry'
