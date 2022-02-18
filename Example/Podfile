@@ -2,10 +2,11 @@ use_frameworks!
 source 'https://github.com/CocoaPods/Specs.git'
 source 'https://github.com/liunina/NLSpecs.git'
 
-platform :ios, '9.3'
+platform :ios, '10.0'
 
 target 'NUKit_Example' do
   pod 'NUKit', :path => '../'
+  pod 'NUBlocksKit', '~> 2.0.0'
 
   target 'NUKit_Tests' do
     inherit! :search_paths
